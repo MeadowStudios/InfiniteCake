@@ -1,0 +1,37 @@
+# Infinite Cake Configuration
+#
+# Commands:
+# /infinitecake set    - Start placement mode, then right-click a block to place the infinite cake.
+# /infinitecake cancel - Cancel placement mode.
+# /infinitecake info   - Show the current cake location.
+# /infinitecake reload - Reload the configuration.
+#
+# Permission:
+# infinitecake.admin - Allows managing the infinite cake.
+#
+# No cake location is set by default.
+# Run /infinitecake set in-game to choose where the infinite cake should be placed.
+# The saved cake location is stored in data.yml.
+
+food:
+  # Vanilla cake restores 2 food points per bite.
+  amount: 2
+  saturation: 0.4
+
+effects:
+  sound: true
+  particles: true
+  actionbar: true
+
+# Messages support legacy color codes using § or &.
+# Hex colors are also supported with the format &#RRGGBB.
+messages:
+  no-permission: "§a→ §fYou do not have permission to use this."
+  players-only: "§a→ §fOnly players can use this command."
+  reload: "§a→ §fInfinite Cake configuration reloaded."
+  placement-start: "§a→ §fRight-click the block the cake should sit on, or right-click an existing cake."
+  placement-cancelled: "§a→ §fCake placement cancelled."
+  placement-invalid: "§a→ §fThe cake must be placed on top of a solid block, or you can right-click an existing cake."
+  placement-set: "§a→ §fInfinite cake placed at §a%location%§f."
+  info: "§a→ §fInfinite cake location: §a%location%§f."
+  cake-actionbar: "ᴍᴍ ʏᴜᴍ ᴄᴀᴋᴇ"

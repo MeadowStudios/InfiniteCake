@@ -1,0 +1,17 @@
+name: InfiniteCake
+version: '${version}'
+main: me.meadow.InfiniteCake
+api-version: '1.21'
+authors: [MeadowStudios]
+loadbefore: [WorldGuard]
+
+commands:
+  infinitecake:
+    description: Manage the infinite cake location.
+    usage: /infinitecake <set|cancel|reload|info>
+    aliases: [icake]
+
+permissions:
+  infinitecake.admin:
+    description: Allows managing Infinite Cake.
+    default: op
