@@ -35,7 +35,3 @@ The ProGuard mapping file is created in:
 build/reports/
 
 The mapping file is not included in the published plugin jar.
-
-## Notes for Modrinth moderation
-
-This repository contains the source code, Gradle build files, plugin resources, build instructions, and obfuscation information needed to review the submitted jar.
