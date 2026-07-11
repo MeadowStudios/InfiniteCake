@@ -64,12 +64,6 @@ The production jar is created by the normal Gradle build and can be found in:
 build/libs/
 ```
 
-Do not upload old jars ending in:
-
-```text
--obf.jar
-```
-
 ## Plugin Metadata
 
 The Bukkit plugin metadata is located in:
