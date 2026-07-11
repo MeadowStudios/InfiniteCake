@@ -2,11 +2,37 @@
 
 InfiniteCake is a Paper/Purpur plugin that lets players use cakes without permanently consuming them.
 
+## Features
+
+- Infinite cake block that can be eaten without being consumed
+- Admin command to set the cake location
+- Protected cake and support block
+- Prevents breaking, burning, physics removal, piston movement, liquid flow, and explosions from removing the cake
+- Configurable food amount and saturation
+- Optional sound, particles, and action bar effects
+- Configurable messages
+- Hex color support in messages
+
 ## Requirements
 
-* Java 21
-* Gradle
-* Paper/Purpur 1.21.x
+- Java 21
+- Gradle
+- Paper/Purpur 1.21.x
+
+## Commands
+
+| Command | Description | Permission |
+|---|---|---|
+| `/infinitecake set` | Enter placement mode and right-click where the infinite cake should be placed | `infinitecake.admin` |
+| `/infinitecake cancel` | Cancel placement mode | `infinitecake.admin` |
+| `/infinitecake info` | Show the current infinite cake location | `infinitecake.admin` |
+| `/infinitecake reload` | Reload the plugin configuration | `infinitecake.admin` |
+
+## Permissions
+
+| Permission | Description | Default |
+|---|---|---|
+| `infinitecake.admin` | Allows managing InfiniteCake | `op` |
 
 ## Building
 
@@ -28,39 +54,21 @@ Build outputs are created in:
 build/libs/
 ```
 
-## Obfuscation
+## Release Jar
 
-If this plugin uses obfuscation, the obfuscation process is defined in:
+This project does not use ProGuard obfuscation.
 
-```text
-build.gradle.kts
-```
-
-If using the ProGuard setup, run:
-
-```bash
-./gradlew obfuscateJar
-```
-
-On Windows, run:
-
-```bat
-gradlew.bat obfuscateJar
-```
-
-The obfuscated jar is created in:
+The production jar is created by the normal Gradle build and can be found in:
 
 ```text
 build/libs/
 ```
 
-The ProGuard mapping file is created in:
+Do not upload old jars ending in:
 
 ```text
-build/reports/
+-obf.jar
 ```
-
-The mapping file is not included in the published plugin jar.
 
 ## Plugin Metadata
 
@@ -68,4 +76,10 @@ The Bukkit plugin metadata is located in:
 
 ```text
 src/main/resources/plugin.yml
+```
+
+Main class:
+
+```text
+me.meadow.InfiniteCake
 ```
