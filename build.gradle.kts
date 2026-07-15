@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "me.meadow"
-version = "1.4"
+version = "1.5"
 
 repositories {
     maven("https://repo.papermc.io/repository/maven-public/")
